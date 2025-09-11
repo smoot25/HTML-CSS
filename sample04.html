@@ -2,6 +2,10 @@
 <html>
     <head>
     <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="IE=edge">
+    <meta name="author" content="황준호">
+    <meta name="description" content="study_about_HTML">
+    <meta name="keywords" content="study">
     <title>오늘의 HTML 연습</title>
     </head>
 
@@ -27,7 +31,6 @@
             <s class="inline"><br>s는 취소선 생성 태그</br></s>
         </div>
         <br></br>
-        <br></br>
             <h2>🐾 개 강아지 마루 🐾</h2>
         <div style="display:flex; gap:10px;">
             <img
@@ -43,7 +46,153 @@
                 alt="백숙 마루"
                 width="355" />
         </div>
+        <hr>
+        <br></br>
+        <div id="my_link_list">
+            <h2>나의 링크 리스트</h2>
+            <ul type="">
+                <li>
+                    <a target="_blank" href="https://blog.naver.com/uto3369">
+                        나의 네이버 블로그
+                    </a>
+                </li>
+                <li>
+                    <a target="_blank" href="profile.html">
+                        [ mini_project ] 나의 프로필 제작
+                    </a>
+                </li>
+            </ul>
+            <p>
+                <table border="1">
+                    <caption>
+                        <strong style="color:#FAA533">표를 만드는 방법</strong>
+                    </caption>
+                    <thead>
+                        <tr>
+                            <th>table</th>
+                            <th>tr</th>
+                            <th>th</th>
+                            <th>td</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>테이블 만들기</td>
+                            <td>표안의 행(calunm,row)</td>
+                            <td>표안의 제목(title)</td>
+                            <td>표안의 콘텐츠(contents)</td>
+                        </tr>
+                    </tbody>
+                    <tfoot>
+                        <tr>
+                            <td>border로 테두리 설정</td>
+                            <td>tr없이 td,th 생성 불가</td>
+                            <td>자동으로 볼드 처리</td>
+                            <td>컨텐츠 입력</td>
+                        </tr>
+                    </tfoot>
+                </table>
+                <h4>표안에 여백 만들기랑 정렬 어디갔지 ㅠ</h4>
+            </p>
+        </div>
+        <hr>
+        <br><br>
+        <div id="input_type">
+            <p class="text_type">
+                <label for="아이디">아이디 : </label>
+                <input type="text" id="아이디" placeholder="아이디를 입력하세요">
+                <br>
+                <label for="비밀번호">비밀번호 : </label>
+                <input type="password" id="비밀번호" placeholder="비밀번호를 입력하세요">
+                <br>
+                <label for="email">이메일 : </label>
+                <input type="email" id="email" placeholder="이메일을 입력해 주세요">
+                <br>
+                <label for="search"></label>
+                <input type="search" id="search" placeholder="무엇을 검색하시겠습니까?">
+                <br>
+                <label for="date">날짜 입력 : </label>
+                <input type="date" id="date">
+            </p>
+            <h5>placeholder<h5>
+            <p class="figure_type">
+                <label for="color">색상 선택 : </label>
+                <input type="color" id="color">
+                <br>
+                <label for="number">숫자 입력 : </label>
+                <input type="number" id="number">
+                <br>
+                <label for="range"></label>
+                <input type="range" id="range">
+                <br>
+                <label for="check_box"> 햄버거 </label>
+                <input type="checkbox" id="check_box">
+                <label for="check_box"> 닭가슴살토스트 </label>
+                <input type="checkbox" id="check_box">
+                <label for="check_box"> 햄치즈토스트 </label>
+                <input type="checkbox" id="check_box">
+                <br>
+            </p>
+        </div>
+        <br></br>
+        <div id="input_type02">
+            <fieldset>
+                <legend>음료 주문</legend>
+                <h4>음료를 골라주세요!</h4>
+                <select multiple size="2">
+                    <option value="iceame" selected>아이스아메리카노</option>
+                    <option value="iceshot">아샷추</option>
+                    <option value="mocha">모카라떼</option>
+                    <option value="inesu">아인슈페너</option>
+                </select>
 
+                <h4>원하시는 다른 음료를 입력해주세요!<h4>
+                <textarea cols="50" rows="10"></textarea>
+            </fieldset>
+            <h4>현재 공부 진척도</h4>
+            <label>
+                <p>현재 공부 진척도는 20%입니다. 좀 더 노력하세요.</p>
+                <progress value="20" max="100"></progress>
+            </label>
+
+            <h4>마루가 귀엽다면 '예'를 눌러주세요.</h4>
+            <button>예</button>
+            <button>아니오</button>
+        </div>
+        <hr>
+        <br></br>
+        <form action="none.com" method="post">
+            <h3 name="log_in">로그인을 진행해 주세요.</h3>
+            <label for="아이디"> 아이디 : </label>
+                <input type="text" id="아이디" name="id" placeholder="아이디를 입력해주세요"></input>
+                <br>
+            <label for="비밀번호"> 비밀번호 : </label>
+                <input type="password" id="비밀번호" name="password" placeholder="비밀번호를 입력해주세요"></input>
+            <br>
+            <button name="loging_in">로그인</button>
+            <button name="cancle">취소</button>
+            <br>
+            <br>
+            <input type="submit">
+        </form>
+        <br>
+        <hr>
+        <br>
+        <div id="semantic_tag">
+            <h3>시멘틱 태그</h3>
+            <p>header : 머릿말</p>
+            <p>nav : 네비게이션 링크</p>
+            <p>main : 주된 콘텐츠</p>
+            <p>article : 독립적인 콘텐츠</p>
+            <p>section : 콘텐츠의 한 섹션</p>
+            <p>aside : 별도의 콘텐츠</p>
+            <p>footer : 맺음말</p>
+            <p>details : 추가적인 상세 정보</p>
+            <p>summary : details의 헤더</p>
+            <p>figure : 설명이 붙는 독립 컨텐츠</p>
+            <p>figcaption : figure의 자막</p>
+            <p>time : 강조할 시간</p>
+        </div>
     </body>
 </html>
 
