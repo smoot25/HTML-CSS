@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="황준호">
+    <title>수면 시간 설문조사</title>
+</head>
+<body>
+    <header>
+        <h2>수면 향상을 위한 설문조사</h2>
+    </header>
+    <hr>
+    <main>
+        <fieldset>
+        <legend><h3 style="color:#7A7A73">&nbsp;&nbsp; 수면에 대한 만족도 조사 &nbsp;&nbsp;</h3></legend>
+        <ol>
+            <section>
+                <li> 현재 본인의 수면에 만족 하시나요? </li>
+                    <input type="radio" id="four" name="satisfaction">
+                    <label for="four"> 만족 </label>
+                    
+                    <input type="radio" id="five-six" name="satisfaction">
+                    <label for="five-six"> 보통 </label>
+
+                    <input type="radio" id="seven-eight" name="satisfaction">
+                    <label for="seven-eight"> 불만족 </label>
+
+            </section>
+            <br>
+            <section>
+                <li> 수면 부족으로 인한 집중력 저하를 경험하신 적이 있나요? </li>
+                    <input type="radio" id="always" name="focus">
+                    <label for="always"> 항상 그렇다 </label>
+                    
+                    <input type="radio" id="usually" name="focus">
+                    <label for="usually"> 종종 있다 </label>
+
+                    <input type="radio" id="often" name="focus">
+                    <label for="often"> 가끔 있다 </label>
+
+                    <input type="radio" id="seldom" name="focus">
+                    <label for="seldom"> 거의 없다 </label>
+
+                    <input type="radio" id="never" name="focus">
+                    <label for="never"> 전혀 없다 </label>
+            </section>
+        </ol>
+        </fieldset>
+
+        <fieldset>
+        <legend><h3 style="color:#7A7A73">&nbsp;&nbsp; 수면 시간 질문 &nbsp;&nbsp;</h3></legend>
+        <ol>
+            <section>
+                <li> 하루 평균 몇 시간 정도 잠을 주무시나요?</li>
+                    <input type="radio" id="four" name="sleephour">
+                    <label for="four"> 4시간 이하 </label>
+                    
+                    <input type="radio" id="five-six" name="sleephour">
+                    <label for="five-six"> 5-6시간 </label>
+
+                    <input type="radio" id="seven-eight" name="sleephour">
+                    <label for="seven-eight"> 7-8시간 </label>
+
+                    <input type="radio" id="over-nine" name="sleephour">
+                    <label for="over-nine"> 9시간 이상 </label>
+            </section>
+            <br>
+            <section>
+                <li> 평소에 잠드는 시간은 보통 언제인가요?</li>
+                    <input type="radio" id="10" name="sleep_time">
+                    <label for="10"> 밤 10시 이전 </label>
+                    
+                    <input type="radio" id="midnight" name="sleep_time">
+                    <label for="midnight"> 밤 10시부터 자정 사이 </label>
+
+                    <input type="radio" id="2" name="sleep_time">
+                    <label for="2"> 자정부터 새벽 2시 사이 </label>
+
+                    <input type="radio" id="after2" name="sleep_time">
+                    <label for="after2"> 새벽 2시 이후 </label>
+            </section>
+            <br>
+            </section>
+                <li> 기상 시간은 보통 언제 인가요? </li>
+                    <input type="radio" id="before6" name="wake-up">
+                    <label for="before6"> 오전 6시 이전 </label>
+                    
+                    <input type="radio" id="6to8" name="wake-up">
+                    <label for="6to8"> 오전 6시 에서 오전 8시 사이 </label>
+
+                    <input type="radio" id="8to10" name="wake-up">
+                    <label for="8to10"> 오전 9시 부터 오전 10시 사이 </label>
+
+                    <input type="radio" id="after10" name="wake-up">
+                    <label for="after10"> 오전 10시 이후 </label>
+            </section>
+        </ol>
+        </fieldset>
+
+        <fieldset>
+        <legend><h3 style="color:#7A7A73">&nbsp;&nbsp; 수면 습관과 환경 질문 &nbsp;&nbsp;</h3></legend>
+        <ol>
+            <section>
+                <li> 평일과 주말의 수면 패턴이 다르신가요?</li>
+                    <input type="radio" id="always" name="difference">
+                    <label for="always"> 일상이다 </label>
+                    
+                    <input type="radio" id="usually" name="difference">
+                    <label for="usually"> 거의 그렇다 </label>
+
+                    <input type="radio" id="often" name="difference">
+                    <label for="often"> 종종 그렇다 </label>
+
+                    <input type="radio" id="never" name="difference">
+                    <label for="never"> 완벽히 일치한다 </label>
+            </section>
+            <br>
+            <section>
+                <li> 잠들기 전에 가장 많이 하는 활동은 무엇인가요? </li>
+                    <input type="radio" id="phone" name="sleep_active">
+                    <label for="phone"> 휴대폰 사용 </label>
+                    
+                    <input type="radio" id="book" name="sleep_active">
+                    <label for="book"> 독서 </label>
+
+                    <input type="radio" id="tv" name="sleep_active">
+                    <label for="tv"> TV 시청 </label>
+
+                    <input type="radio" id="anything" name="sleep_active">
+                    <label for="anything"> 다른 활동 없음 </label>
+            </section>
+            <br>
+            </section>
+                <li> 수면에 영향을 준다고 생각하는 요소에 모두 체크해 주세요.</li>
+                    <input type="checkbox" id="cigarette" name="influence">
+                    <label for="cigarette"> 담배 </label>
+                    
+                    <input type="checkbox" id="caffein" name="influence">
+                    <label for="caffein"> 카페인 </label>
+
+                    <input type="checkbox" id="stress" name="influence">
+                    <label for="stress"> 스트레스 </label>
+
+                    <input type="checkbox" id="electronic" name="influence">
+                    <label for="eletronic"> 전자기기 사용 </label>
+
+                    <input type="checkbox" id="exercise" name="influence">
+                    <label for="exercise"> 운동 및 활동 부족 </label>
+
+                    <input type="checkbox" id="envirenment" name="influence">
+                    <label for="envirenment"> 환경( 소음, 빛 등 ) </label>
+            </section>
+        </ol>
+        </fieldset>
+    </main>
+    <br>
+    <hr>
+    <footer>
+        <fieldset>
+            <legend><h3 style="color:#7A7A73">&nbsp;&nbsp; 설문에 참여 해주셔서 감사합니다! &nbsp;&nbsp;</h3></legend>
+            <h4>마지막으로 하단 내용을 작성해 주십시오.</h4>
+            <ol>
+            <section>
+                <li> 귀하의 나이를 선택해 주십시오 </li>
+                    <input type="radio" id="always" name="age">
+                    <label for="always"> 10대 </label>
+                    
+                    <input type="radio" id="usually" name="age">
+                    <label for="usually"> 20대 ~ 30대 </label>
+
+                    <input type="radio" id="often" name="age">
+                    <label for="often"> 40대 ~ 50대 </label>
+
+                    <input type="radio" id="never" name="age">
+                    <label for="never"> 60세 이상 </label>
+            </section>
+            <br>
+            <section>
+                <li> 수면에 대한 자신만의 비결이 있다면 해당 사항에 적어주십시오. </li>
+                <textarea cols="80" rows="3"></textarea>
+            </section>
+            <br>
+            <section>
+                <li> 
+                    성함을 작성해 주십시오 :
+                    <input type="text" id="name" placeholder="성함을 입력해주세요"></input>
+                </li>
+            </section>
+        </fieldset>
+        <a href="https://www.sleepytime.day/ko" targer="_blank" style="font-size:13px; color:#7A7A73;">
+            수면을 도와줄 수면사이클 링크입니다.
+        </a>
+    </footer>
+</body>
+</html>
