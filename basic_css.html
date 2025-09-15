@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BASIC_CSS</title>
+    <link href="basic_css.css" rel="stylesheet">
+</head>
+<body>
+    <div class="subject">
+        <p>국어</p>
+        <p>수학</p>
+        <p>영어</p>
+        <p>음악</p>
+        <span>체육</span>
+    </div>
+
+    <hr>
+    <br>
+        
+    <div class="container">
+        <img id="first"
+        src="images/maru_01.jpg" width="160px">
+        <img id="second"
+        src="images/maru_02.jpg" width="160px">
+        <p id="maru">
+        내 새꾸 개마루. &nbsp;&nbsp;&nbsp;&nbsp;
+        내 새꾸 개마루는 천방지축 사고뭉치 &nbsp;&nbsp;&nbsp;&nbsp;
+        어디로 튈지 몰라서 자꾸 신경이 쓰이는 시허연 솜사탕
+        </p>
+    </div>
+
+    <fieldset>
+        <legend>위치 지정</legend>
+        <div class="position">
+            <p id="one">static : <br>기본값</p>
+            <p id="two">relative : <br>원래자리 기준으로 위치 이동</p>
+            <p id="three">absolute : <br>원래 위치 삭제, position이 지정된 다른 요소를 기준으로 이동</p>
+            <p id="four">scroll</p>
+            <p id="five">fixed : <br>화면기준 위치 고정</p>
+        </div>
+        <div class="index">
+            <p id="aaa">
+                겹져 지는 모든 컨츠에 대해서는 "z-index"를 사용하여
+                제일 앞에 나오는 것부터 순서대로 정할 수 지정할 수 있다.
+                또한 지금 처럼 넘치는 텍트를 작성 했을때에는, overflow를
+                이용하여 하나의 보더 안에 모두 집어 넣을 수도 있다.
+            </p>
+            <p id="bbb">치</p>
+            <p id="ccc">지</p>
+            <p id="ddd">마</p>
+        </div>
+    </fieldset>
+</body>
+</html>
