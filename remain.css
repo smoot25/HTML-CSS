@@ -1,0 +1,13 @@
+[alt]{
+    border:3px dotted #F08787;
+}
+p > em{
+    color:blue;
+}
+#pet ~ p{
+    color:#715A5A;
+}
+#pet + p{
+    color:#F08787;
+}
+/* 형제 선택자의 경우, 그 뒤에 있는 형제들만 적용된다. */

@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="remain.css" rel="stylesheet">
+    <title>속성선택자와 의사클래스</title>
+</head>
+<body>
+    <fieldset>
+        <legend><h3>&nbsp;&nbsp;속성선택자&nbsp;&nbsp;</h3></legend>
+        <ol>
+            <li>속성선택자 : [속성명]
+                <ul>
+                    <li>* : 값의 포함 여부</li>
+                    <li>^ : 값의 시작 여부</li>
+                    <li>$ : 값의 끝여부</li>
+                </ul>
+            </li>
+            <li>하위 요소 선택자 : 공백</li>
+            <li>자식 요소 선택자 : ></li>
+            <li>인접 형제 선택자 : +</li>
+            <li>형제 요소 선택자 : ~</li>
+        </ol>
+    </fieldset>
+    <br><hr><br>
+    <fieldset>
+        <legend><h3>&nbsp;&nbsp; EXAMPLE &nbsp;&nbsp;</h3></legend>
+            <img src="images/maru_01.jpg" width="114" alt="maru">
+            <img src="images/maru_02.jpg" width="120">
+            <img src="images/maru_03.jpg" width="120" id="pet">
+            <p>마루는 황준호의 집에서 키우고 있는 애완동물 강아지이며, 올해로 5세 이다.</p>
+            <p>가장 좋아하는 음식은 고구마이며, <em>닭고기에는 알레르기</em>가 있다.</p>
+            <p>마루는 겁이 굉장히 많아서 산책 나가는 것을 그렇게 좋아하지는 않는다.</p>
+            <p>그래도 집에 옥상이 있어서 틈만 나면 마루를 옥상에서 뛰어놀도록 한다.</p>
+    </fieldset>
+
+    <br><hr><br>
+
+    <fieldset>
+        <legend><h3>&nbsp;&nbsp; 의사클래스 &nbsp;&nbsp;</h3></legend>
+        <p>
+            의사클래스 : 사용자의 행동으로 변경되는 css
+        </p>
+        <p> 사용방법 = 선택자 : 의사클래스</p>
+        <div>
+            <p>의사클래스의 종류</p>
+            <ul>
+                <li> hover : 마우스 커서 올리기</li>
+                <li> active : 마우스로 클릭</li>
+                <li> focus : 입력창 깜빡거리는 효과</li>
+                <li> disabled : 입력요소에 입력 불가</li>
+                <li> nth-child() : 형제중에 몇번째 형제를 선택한다.</li>
+            </ul>
+        </div>
+    </fieldset>
+    <fieldset>
+        <legend><h3>&nbsp;&nbsp; 의사요소 &nbsp;&nbsp;</h3></legend>
+        <p>
+            의사요소 : 요소의 특정부분만을 선택가능
+        </p>
+        <p> 사용방법 = 선택자 :: 의사요소</p>
+        <div>
+            <p>의사요소의 종류</p>
+            <ul>
+                <li> after : 요소 앞에 새콘텐츠 추가후 선택</li>
+                <li> before : 요소 뒤에 새콘텐츠 추가후 선택</li>
+                <li> first-line</li>
+                <li> marker</li>
+                <li> placeholder </li>
+            </ul>
+        </div>
+    </fieldset>
+</body>
+</html>
