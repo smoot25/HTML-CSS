@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>practice_css</title>
+    <link href="practice_css.css" rel="stylesheet">
+</head>
+<body>
+    <main>
+        <fieldset>
+            <legend><h3>&nbsp;&nbsp; CSS선택자 &nbsp;&nbsp;</h3></legend>
+            <ol>
+                <li id="all">전체선택자 : 문서내 모두 (*)</li>
+                <li class="only">태그선택자 : 특정 태그요소만 (태그명)</li>
+                <li class="only">클래스 선택자 : 특정 클래스 이름만 (.클래스이름)</li>
+                <li class="only">아이디 선택자 :  득정 아이디값 (#아이디값)</li>
+                <li id="all">그룹선택자 : 여러 유형의 선택자를 동시에 (선택자, 선택자, 선택자)</li>
+            </ol>
+        </fieldset>
+        <br>
+        <fieldset>
+            <legend><h3>&nbsp;&nbsp; BOX MODEL &nbsp;&nbsp;</h3></legend>
+            <ol>
+                <li id="blank">바깥 여백 : margin</li>
+                    <ul>
+                        <li>모든면 : </li>
+                        <li>상하, 좌우 : </li>
+                        <li>위 양쪽 아래 : </li>
+                        <li>위 오 아 왼 : </li>
+                    </ul>
+                <li id="blank">안쪽 여백 : padding</li>
+                <li class="border">테두리 : border</li>
+                <li class="content">콘텐츠 영역 : width, height</li>
+            </ol>
+        </fieldset>
+        <fieldset>
+            <legend><h3>&nbsp;&nbsp; border-style &nbsp;&nbsp;</h3></legend>
+            <ol>
+                <li>테두리 두께 : border-width</li>
+                <li>테두리 모양 지정 : border-style</li>
+                <li>테두리 색상 : border-color</li>
+                <li>테두리 한번에 : border</li>
+                <!--box-sizing:border-box; ( 여백과 테두리를 모두 면적에 포함 )
+                box-sizing:content-box;( 여백과 테두리가 면적과는 별개로 적용 )-->
+            </ol>
+        </fieldset>
+        <br>
+        <hr>
+        <br>
+        <fieldset class="IVE">
+            <legend><h3>&nbsp;&nbsp; IVE - kitsch &nbsp;&nbsp;</h3></legend>
+            <div class="lyrics">
+                <p id="eng">It's our time</p>
+                <p id="kor">우린 달라, 특별한 게 좋아</p>
+                <p id="eng">Oh, what a good time</p>
+                <p id="kor">난 잘 살아, 내 걱정은 낭비야</p>
+                <p id="kor">니가 보낸 DM을 읽고 나서</p>
+                <p id="kor">답이 없는 게 내 답이야</p>
+                <p id="eng">(That's my style)</p>
+            </div>
+        </fieldset>
+        <hr>
+        <fieldset>
+            <legend><h2>&nbsp;&nbsp; 배경을 꾸며 보자 &nbsp;&nbsp;</h2></legend>
+            <div>
+                <p id="background">-color : 배경 색상 지정</p>
+                <p id="background">-clip : 키워드로 배경 적용 범위 지정</p>
+                <p id="background">-image : 배경 이미지 url</p>
+                <p id="background">-origin : 키워드로 배경 시작 위치</p>
+                <p id="background">-size : 이미지 수치 지정</p>
+                <p id="background">-position : 이미지 위치 지정</p>
+                <p id="background">-repeat : 이미지 반복 패턴 생성</p>
+                <p id="color">opcity는 투명도</p>
+            </div>
+        </fieldset>
+        <fieldset>
+            <legend><h2>&nbsp;&nbsp; 글꼴은 어떻게 바꾸나? &nbsp;&nbsp;</h2></legend>
+            <div>
+                <p>전체구조 : font-familiy: 글꼴, 글꼴, 글꼴</p>
+                <ul>
+                    <li>font-size : 사이즈 크기</li>
+                    <li>font-weight : 글자 두께</li>
+                    <li>line-height : 행 높이</li>
+                    <li> [중요!!] text-align : 텍스트 정렬 방식</li>
+                    <li>test-decoration : 텍스트 줄 긋기</li>
+                </ul>
+                <p>em : 부모 폰트사이즈에 사이즈 배수로 곱하기</p>
+                <p>rem : html 전체 폰트 사이즈에서 배수로 곱하기</p>
+            </div>
+        </fieldset>
+    </main>
+</body>
+</html>

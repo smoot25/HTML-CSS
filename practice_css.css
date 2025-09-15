@@ -1,0 +1,41 @@
+*{
+    color:#57564F;
+}
+/*
+선택자 우선순위 : 쓰여진 순서와 관계없이 적용되는 순위 (중요!)
+1. 아이디 선택자
+2. 클래스 선택자
+3. 태그 선택자
+*/
+li{
+    color:#7A7A73;
+}
+.only{
+    color:#78C841;
+}
+#all{
+    color:#FF9B2F;
+}
+.lyrics{
+    width:400px;
+    height:350px;
+    background-color:#212121;
+    background-clip: padding-box;
+    padding-top:75px;
+    margin:auto;
+    border-width:8px;
+    border-color:#db6697;
+    border-style:double;
+    border-radius:15px;
+}
+fieldset.IVE{
+    text-align:center;
+}
+#kor{
+    color:#ffffff;
+    font-weight:bold;
+}
+#eng{
+    color:#db6697;
+    font-weight:bold;
+}
